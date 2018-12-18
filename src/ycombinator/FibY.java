@@ -2,11 +2,12 @@ package ycombinator;
 
 import java.math.BigInteger;
 import java.util.function.Function;
+import java.util.function.UnaryOperator;
 
 public class FibY {
 
   public static void main(String[] args) {
-    Function<Function<Integer, BigInteger>, Function<Integer, BigInteger>> fib =
+    UnaryOperator<Function<Integer, BigInteger>> fib =
         (Function<Integer, BigInteger> f) ->
             (Integer n) -> {
               if (n == 0) return BigInteger.ZERO;
@@ -27,7 +28,7 @@ public class FibY {
     long t1 = System.nanoTime();
     BigInteger n1 = new Y<Integer, BigInteger>().apply(fib).apply(n);
     long t2 = System.nanoTime();
-    BigInteger n2 = new CachedY<Integer, BigInteger>().apply(fib).apply(n);
+    BigInteger n2 = new CachedY<Integer, BigInteger>(1000).apply(fib).apply(n);
     long t3 = System.nanoTime();
     System.out.printf("Y,len:%d,time:%dms%n", n1.toString().length(), (t2 - t1) / 1000_000);
     System.out.printf("CachedY,len:%d,time:%dms%n", n2.toString().length(), (t3 - t2) / 1000_000);
