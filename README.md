@@ -1,17 +1,17 @@
 # y-combinator-java
-#####java version of y-combinator
+##### java version of y-combinator
 
-#####In functional-programing, the Y-Combinartor is defined as :
+##### In functional-programing, the Y-Combinartor is defined as :
 
 ![Definition](https://github.com/YuyuZha0/y-combinator-java/blob/master/definition.png?raw=true)
 
-#####It is also called [Fixed-point combinator](https://en.wikipedia.org/wiki/Fixed-point_combinator):
+##### It is also called [Fixed-point combinator](https://en.wikipedia.org/wiki/Fixed-point_combinator):
 
 ![Explain](https://github.com/YuyuZha0/y-combinator-java/blob/master/explain.png?raw=true)
 
-#####This is a java version of Y-Combinator.
+##### This is a java version of Y-Combinator.
 
-####Usage:
+#### Usage:
     public static void main(String[] args) {
     Function<Function<Integer, BigInteger>, Function<Integer, BigInteger>> fib =
         (Function<Integer, BigInteger> f) ->
