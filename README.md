@@ -1,5 +1,4 @@
 # y-combinator-java
-##### java version of y-combinator
 
 ##### In functional-programing, the Y-Combinartor is defined as :
 
