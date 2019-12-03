@@ -2,11 +2,11 @@
 
 In functional-programing, the Y-Combinartor is defined as :
 
-![Definition](definition.png)
+![Definition](https://raw.githubusercontent.com/YuyuZha0/y-combinator-java/master/definition.png)
 
 It is also called [Fixed-point combinator](https://en.wikipedia.org/wiki/Fixed-point_combinator):
 
-![Explain](explain.png)
+![Explain](https://raw.githubusercontent.com/YuyuZha0/y-combinator-java/master/explain.png)
 
 This is a java version of Y-Combinator.
 
